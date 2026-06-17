@@ -127,34 +127,41 @@
 
           <div class="projects-grid">
             <article class="project-card featured">
-              <div class="project-preview preview-pos" aria-hidden="true">
-                <div class="preview-sidebar">
+              <div class="project-preview mock-preview mock-preview-wide" aria-hidden="true">
+                <div class="mock-sidebar">
                   <span>Panel</span>
                   <span>POS</span>
                   <span>Inventario</span>
                 </div>
-                <div class="preview-main">
-                  <div class="preview-topline">
+                <div class="mock-workspace">
+                  <div class="mock-topbar">
                     <strong>Peralta POS</strong>
-                    <small>Datos demo</small>
+                    <small>En proceso</small>
                   </div>
-                  <div class="preview-products">
-                    <i><strong>RD$ 76K</strong><span>Ventas</span></i>
-                    <i><strong>128</strong><span>Productos</span></i>
-                    <i><strong>42</strong><span>Clientes</span></i>
-                    <i><strong>9</strong><span>Stock bajo</span></i>
+                  <div class="mock-metrics">
+                    <div><span>Ventas hoy</span><strong>RD$ 76K</strong></div>
+                    <div><span>Productos</span><strong>128</strong></div>
+                    <div><span>Clientes</span><strong>42</strong></div>
+                    <div><span>Stock bajo</span><strong>9</strong></div>
                   </div>
-                  <div class="preview-ticket">
-                    <span>Cemento gris 42.5kg</span>
-                    <span>Varilla 3/8 x 20 pies</span>
-                    <strong>Total RD$ 4,820</strong>
+                  <div class="mock-bottom">
+                    <div class="mock-table">
+                      <span><strong>FT-014</strong><em>Stock bajo</em></span>
+                      <span><strong>EL-204</strong><em>Disponible</em></span>
+                      <span><strong>COT-017</strong><em>Enviada</em></span>
+                    </div>
+                    <div class="mock-ticket">
+                      <small>Venta actual</small>
+                      <span>2 artículos</span>
+                      <strong>RD$ 4,820</strong>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="project-body">
                 <div class="project-meta">
                   <span>Full stack</span>
-                  <span>En desarrollo</span>
+                  <span class="status-progress">En desarrollo activo</span>
                 </div>
                 <h3>Peralta POS</h3>
                 <p>
@@ -173,17 +180,17 @@
             </article>
 
             <article class="project-card">
-              <div class="project-preview preview-inventory" aria-hidden="true">
-                <div class="preview-header">
+              <div class="project-preview mock-preview" aria-hidden="true">
+                <div class="mock-topbar">
                   <strong>Repuestos Industriales</strong>
                   <small>DEMO</small>
                 </div>
-                <div class="preview-stats">
-                  <i><strong>18</strong><span>Clientes</span></i>
-                  <i><strong>64</strong><span>Productos</span></i>
-                  <i><strong>27</strong><span>Solicitudes</span></i>
+                <div class="mock-metrics">
+                  <div><span>Clientes</span><strong>18</strong></div>
+                  <div><span>Productos</span><strong>64</strong></div>
+                  <div><span>Solicitudes</span><strong>27</strong></div>
                 </div>
-                <div class="preview-table">
+                <div class="mock-table">
                   <span><strong>Bomba centrifuga</strong><em>Solicitado</em></span>
                   <span><strong>Sensor M18</strong><em>Revision</em></span>
                   <span><strong>Rodamiento 6205</strong><em>Entregado</em></span>
@@ -211,17 +218,18 @@
             </article>
 
             <article class="project-card">
-              <div class="project-preview preview-store" aria-hidden="true">
-                <div class="store-grid">
-                  <i><strong>Taladro</strong><span>RD$ 3,250</span></i>
-                  <i><strong>Cemento</strong><span>RD$ 465</span></i>
-                  <i><strong>Disco corte</strong><span>RD$ 180</span></i>
-                  <i><strong>Pintura</strong><span>RD$ 920</span></i>
+              <div class="project-preview mock-preview mock-store-preview" aria-hidden="true">
+                <div class="mock-store-grid">
+                  <div><strong>Taladro</strong><span>RD$ 3,250</span></div>
+                  <div><strong>Cemento</strong><span>RD$ 465</span></div>
+                  <div><strong>Disco corte</strong><span>RD$ 180</span></div>
+                  <div><strong>Pintura</strong><span>RD$ 920</span></div>
                 </div>
-                <div class="store-cart">
-                  <span>Factura FAC-000124</span>
+                <div class="mock-ticket">
+                  <small>Factura</small>
+                  <span>FAC-000124</span>
                   <span>ITBIS RD$ 562</span>
-                  <strong>Total RD$ 3,682</strong>
+                  <strong>RD$ 3,682</strong>
                 </div>
               </div>
               <div class="project-body">
@@ -246,13 +254,13 @@
             </article>
 
             <article class="project-card">
-              <div class="project-preview preview-finance" aria-hidden="true">
-                <div class="finance-cards">
-                  <i><strong>RD$ 52K</strong><span>Balance</span></i>
-                  <i><strong>RD$ 18K</strong><span>Ingresos</span></i>
-                  <i><strong>RD$ 7K</strong><span>Gastos</span></i>
+              <div class="project-preview mock-preview mock-finance-preview" aria-hidden="true">
+                <div class="mock-metrics">
+                  <div><span>Balance</span><strong>RD$ 52K</strong></div>
+                  <div><span>Ingresos</span><strong>RD$ 18K</strong></div>
+                  <div><span>Gastos</span><strong>RD$ 7K</strong></div>
                 </div>
-                <div class="finance-chart">
+                <div class="mock-chart">
                   <span style="height: 46%"></span>
                   <span style="height: 62%"></span>
                   <span style="height: 35%"></span>
@@ -283,19 +291,33 @@
 
           <div class="secondary-projects" aria-label="Otros proyectos">
             <a href="https://task-manager-xavier.netlify.app/" target="_blank" rel="noreferrer">
+              <div class="mini-preview task-mini" aria-hidden="true">
+                <span><i></i> Diseñar portafolio</span>
+                <span><i></i> Subir a GitHub</span>
+                <span class="muted-line"><i></i> Ajustar demo</span>
+              </div>
               <strong>Task Manager JS</strong>
               <span>Lista de tareas con filtros y persistencia local.</span>
               <em>Ver demo</em>
             </a>
             <a href="https://control-gastos-react-rust.vercel.app/" target="_blank" rel="noreferrer">
+              <div class="mini-preview expense-mini" aria-hidden="true">
+                <div><span>Balance</span><strong>RD$ 18K</strong></div>
+                <div><span>Ingresos</span><strong>RD$ 24K</strong></div>
+                <div><span>Gastos</span><strong>RD$ 6K</strong></div>
+              </div>
               <strong>Control de gastos React</strong>
               <span>Base de dashboard financiero con componentes reutilizables.</span>
               <em>Ver demo</em>
             </a>
-            <a href="https://github.com/xavierwork-p/proyecto-inventario" target="_blank" rel="noreferrer">
+            <a class="secondary-underway" href="https://github.com/xavierwork-p/proyecto-inventario" target="_blank" rel="noreferrer">
+              <div class="mini-preview inventory-mini" aria-hidden="true">
+                <span>Inventario</span>
+                <small>Prototipo inicial</small>
+              </div>
               <strong>Proyecto Inventario</strong>
-              <span>Repositorio de práctica orientado a inventario.</span>
-              <em>Ver GitHub</em>
+              <span>Primer prototipo iniciado para práctica de inventario.</span>
+              <em class="secondary-progress">En desarrollo</em>
             </a>
           </div>
         </div>

@@ -409,6 +409,201 @@ h3 {
   background: #e9ece8;
 }
 
+.mock-preview {
+  display: grid;
+  gap: 0.85rem;
+  min-height: 260px;
+  align-content: start;
+  background: #eef1ed;
+}
+
+.mock-preview-wide {
+  grid-template-columns: 86px minmax(0, 1fr);
+}
+
+.mock-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 100%;
+  padding: 0.75rem;
+  background: var(--charcoal);
+  border-radius: 8px;
+}
+
+.mock-sidebar span {
+  display: block;
+  padding: 0.45rem 0.55rem;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.mock-workspace {
+  display: grid;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.mock-topbar {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.7rem 0.8rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.mock-topbar strong,
+.mock-table strong,
+.mock-ticket strong,
+.mock-store-grid strong,
+.mini-preview strong {
+  color: var(--charcoal);
+  font-size: 0.84rem;
+  line-height: 1.15;
+}
+
+.mock-topbar small {
+  flex: 0 0 auto;
+  color: var(--amber);
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.mock-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.mock-preview:not(.mock-preview-wide) .mock-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mock-metrics div,
+.mock-store-grid div {
+  display: grid;
+  gap: 0.35rem;
+  min-height: 68px;
+  align-content: center;
+  padding: 0.7rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.mock-metrics span,
+.mock-store-grid span,
+.mock-ticket span,
+.mock-ticket small {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mock-metrics strong {
+  color: var(--charcoal);
+  font-size: 1rem;
+  line-height: 1.1;
+}
+
+.mock-bottom,
+.mock-store-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(130px, 0.38fr);
+  gap: 0.75rem;
+}
+
+.mock-table,
+.mock-ticket {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.mock-table span {
+  display: flex;
+  min-height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  padding: 0.38rem 0.5rem;
+  background: #edf0f2;
+  border-radius: 6px;
+}
+
+.mock-table em {
+  flex: 0 0 auto;
+  color: var(--green);
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.mock-ticket strong {
+  display: flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 0.45rem 0.55rem;
+  color: var(--white);
+  background: var(--green);
+  border-radius: 6px;
+  font-size: 0.86rem;
+}
+
+.mock-store-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.mock-store-grid div:nth-child(2),
+.mock-store-grid div:nth-child(3) {
+  background: var(--soft-blue);
+}
+
+.mock-store-grid div:nth-child(1),
+.mock-store-grid div:nth-child(4) {
+  background: var(--soft-amber);
+}
+
+.mock-finance-preview {
+  align-content: space-between;
+}
+
+.mock-finance-preview .mock-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.mock-chart {
+  display: flex;
+  align-items: end;
+  gap: 0.65rem;
+  min-height: 116px;
+  padding: 0.9rem;
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 8px;
+}
+
+.mock-chart span {
+  flex: 1;
+  min-width: 20px;
+  background: var(--soft-green);
+  border-radius: 6px 6px 0 0;
+}
+
 .preview-pos {
   display: grid;
   grid-template-columns: 76px 1fr;
@@ -628,6 +823,11 @@ h3 {
   font-weight: 800;
 }
 
+.project-meta .status-progress {
+  color: #7c3f05;
+  background: var(--soft-amber);
+}
+
 .project-body p {
   color: var(--muted);
 }
@@ -664,8 +864,9 @@ h3 {
 
 .secondary-projects a {
   display: grid;
-  gap: 0.25rem;
-  min-height: 120px;
+  gap: 0.65rem;
+  min-height: 220px;
+  align-content: start;
   padding: 1rem;
   border: 1px solid var(--line);
   background: #fffaf1;
@@ -680,6 +881,89 @@ h3 {
   color: var(--green);
   font-style: normal;
   font-weight: 900;
+}
+
+.secondary-projects .secondary-underway {
+  background: #fff6e8;
+}
+
+.secondary-projects .secondary-progress {
+  color: #7c3f05;
+}
+
+.mini-preview {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 94px;
+  padding: 0.75rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.task-mini span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 24px;
+  color: var(--charcoal);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.task-mini i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--green);
+  border-radius: 4px;
+}
+
+.task-mini .muted-line {
+  color: var(--muted);
+}
+
+.expense-mini {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.expense-mini div {
+  display: grid;
+  gap: 0.3rem;
+  align-content: center;
+  padding: 0.55rem;
+  background: #edf0f2;
+  border-radius: 8px;
+}
+
+.expense-mini span {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.expense-mini strong {
+  color: var(--charcoal);
+  font-size: 0.82rem;
+  line-height: 1.1;
+}
+
+.inventory-mini {
+  align-content: center;
+  background: var(--soft-amber);
+}
+
+.inventory-mini span {
+  color: var(--charcoal);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.inventory-mini small {
+  color: #7c3f05;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .section-profile {
@@ -832,6 +1116,27 @@ h3 {
     min-height: 220px;
   }
 
+  .mock-preview-wide,
+  .mock-bottom,
+  .mock-store-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-sidebar {
+    display: none;
+  }
+
+  .mock-metrics,
+  .mock-preview:not(.mock-preview-wide) .mock-metrics,
+  .mock-finance-preview .mock-metrics,
+  .expense-mini {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-store-grid {
+    grid-template-columns: 1fr;
+  }
+
   .preview-store,
   .preview-pos {
     grid-template-columns: 1fr;
@@ -843,6 +1148,10 @@ h3 {
 
   .profile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .secondary-projects a {
+    min-height: 0;
   }
 
   .site-footer {
